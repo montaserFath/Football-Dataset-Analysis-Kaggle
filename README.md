@@ -43,7 +43,7 @@ leagues: England, Spain, Germany, Italy, France from 2011/2012 season to 2016/20
 
 # Neural Network
 
-- Recurrent Neural Network (RNN) as a classifier.
+- **Recurrent Neural Network (RNN)** as a classifier.
 
 - **Inputs** 2d-array has size (number of matches X Vectored features events).
 
@@ -82,3 +82,6 @@ leagues: England, Spain, Germany, Italy, France from 2011/2012 season to 2016/20
 
 
 # Discussion 
+- One-hot encoding increases the training time and reduces accuracy significantly because when we use one-hot encoding we increase the variance between values which change the correlation between data.
+
+- Recommend to use LSTM.
