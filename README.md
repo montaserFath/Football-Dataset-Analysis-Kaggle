@@ -66,7 +66,7 @@ over 90% of the played games during these seasons have event data.
  
  - Optimizer: Adam.
 
- -Device: CPU.
+ - Device: CPU.
  
  ## Hyper-parameters
  
