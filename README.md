@@ -6,29 +6,26 @@
 
 # [Kaggle Data-Set](https://www.kaggle.com/secareanualin/football-events/home)
 
-- The dataset provides a granular view of 9,074 games, totaling 941,009 events from the biggest 5 European football (soccer) 
+- The dataset provides a granular view of **9,074 games**, totaling 941,009 events from the biggest 5 European football (soccer) 
 leagues: England, Spain, Germany, Italy, France from 2011/2012 season to 2016/2017 season. 
-
-- There are games that have been played during these seasons for which I could not collect detailed data. Overall,
-over 90% of the played games during these seasons have event data.
 
 ## The dataset is organized in 3 files:
 
-- events.csv contains event data about each game.
+- **events.csv** contains event data about each game.
 
-- ginf.csv contains metadata and market odds about each game
+- **ginf.csv** contains metadata and market odds about each game
 
-- dictionary.txt contains a dictionary with the textual description of each categorical variable coded with integers.
+- **dictionary.txt** contains a dictionary with the textual description of each categorical variable coded with integers.
 
 # Data Understanding
 
-- Event type: Corner, Foul, Substitution, Red card, Yellow card, Hand ball, Offside, etc.
+- **Event type**: Corner, Foul, Substitution, Red card, Yellow card, Hand ball, Offside, etc.
 
-- Location: Centre of the box, Outside the box , Left side of the six yard box, Long range, etc.
+- **Location**: Centre of the box, Outside the box , Left side of the six yard box, Long range, etc.
 
-- Shoot place: Too high, Bit Too high, Bottom left corner, Top centre of the goal , etc.
+- **Shoot place**: Too high, Bit Too high, Bottom left corner, Top centre of the goal , etc.
 
-- shoot outcome: On target, OFF target, Blocked or Hit the bar.
+- **shoot outcome**: On target, OFF target, Blocked or Hit the bar.
 
 # Data pre-processing
 
@@ -48,25 +45,25 @@ over 90% of the played games during these seasons have event data.
 
 - Recurrent Neural Network (RNN) as a classifier.
 
-- The inputs will 2d-array has size (number of matches X Vectored features events).
+- **Inputs** 2d-array has size (number of matches X Vectored features events).
 
-- Labels: numbers of goal in a match.
+- **Labels:** numbers of goal in a match.
  
-- Output: prediction number of goals in this match (Float number we round it).
+- **Output:** prediction number of goals in this match (Float number we round it).
 
 ## Network structure
 
-- Training data: Events of 2000 matches.
+- **Training data:** Events of 2000 matches.
 
-- Test data: Events of Events100 matches.
+- **Test data:** Events of Events100 matches.
 
-- accuracy: round(prediction)== label.
+- **Accuracy:** round(prediction)== label.
 
-- Loss function: Mean Square Error (MSE).
+- **Loss function:** Mean Square Error (MSE).
  
- - Optimizer: Adam.
+ - **Optimizer:** Adam.
 
- - Device: CPU.
+ - **Device:** CPU.
  
  ## Hyper-parameters
  
